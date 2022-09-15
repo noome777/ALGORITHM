@@ -4,8 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Solution02 s = new Solution02();
-		s.solution(356);
+		Solution03 s = new Solution03();
+		s.solution(6);
 
 	}
 
