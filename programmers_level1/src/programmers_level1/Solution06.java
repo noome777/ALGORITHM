@@ -21,7 +21,6 @@ public class Solution06 {
 			 System.out.println(s);
 			 
 			 answer[str.length()-i-1] = str.charAt(i)-'0';
-			 
 		 }
 		 
 		 return answer;
