@@ -1,5 +1,7 @@
 package programmers_level1;
 
+//자연수 뒤집어 배열로 만들기
+
 /*문제 설명
 자연수 n을 뒤집어 각 자리 숫자를 원소로 가지는 배열 형태로 리턴해주세요. 예를들어 n이 12345이면 [5,4,3,2,1]을 리턴합니다.
 
@@ -11,6 +13,7 @@ n	return
 
 public class Solution06 {
 
+	//풀이1
 	 public int[] solution(long n) {
         
 		 String str = String.valueOf(n);
@@ -25,5 +28,31 @@ public class Solution06 {
 		 
 		 return answer;
         
-    }
+     }
+	 
+	 //풀이2
+	 public int[] solution(long n) {
+	        
+		 
+		 
+		 return answer;
+        
+     }
+	 
+	 //풀이3
+	 public int[] solution(long n) {
+	        
+		 String str = String.valueOf(n);
+		 int [] answer = new int[str.length()];
+		 
+		 for(int i = str.length()-1; i >= 0; i--) {
+			 String s = str.substring(i, i+1);
+			 System.out.println(s);
+			 
+			 answer[str.length()-i-1] = str.charAt(i)-'0';
+		 }
+		 
+		 return answer;
+        
+     }
 }
